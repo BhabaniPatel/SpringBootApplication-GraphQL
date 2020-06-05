@@ -1,0 +1,18 @@
+schema{
+	query: Query
+}
+
+
+type Query{
+	allStores: [Store]
+	Store(id: String): Store
+}
+ 
+type Store{
+	storeId: String
+	storeName: String
+	region:	String
+	establishedDate: String
+	departments: [String]
+	owner: String
+} 
