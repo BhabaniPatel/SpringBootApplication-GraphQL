@@ -85,8 +85,8 @@ public class StoreSearchController {
 	}
 
 	@GetMapping("/search/{storeId}")
-	public Store getStoreInfo(@PathVariable String movieId) {
-		return service.findStoreById(movieId);
+	public Store getStoreInfo(@PathVariable String storeId) {
+		return service.findStoreById(storeId);
 	}
 
 	@PostMapping("/getStoreById")

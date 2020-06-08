@@ -15,8 +15,8 @@ public class StoreDataFetcher implements DataFetcher<com.tesco.spring.graphql.ap
 
 	@Override
 	public com.tesco.spring.graphql.api.entity.Store get(DataFetchingEnvironment environment) {
-		String movieId = environment.getArgument("id");
-		return repository.findOne(movieId);
+		String storeId = environment.getArgument("id");
+		return repository.findOne(storeId);
 	}
 
 }

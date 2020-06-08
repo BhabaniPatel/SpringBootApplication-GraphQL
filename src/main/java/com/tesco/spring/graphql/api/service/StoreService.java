@@ -45,7 +45,7 @@ public class StoreService {
 		return repository.findAll();
 	}
 
-	public Store findStoreById(String movieId) {
-		return repository.findOne(movieId);
+	public Store findStoreById(String storeId) {
+		return repository.findOne(storeId);
 	}
 }
